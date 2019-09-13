@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+ <head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>Document</title>
+<link rel="stylesheet" href="http://at.alicdn.com/t/font_1121001_gy5s1mw18td.css">
+<style>
+/*全局样式*/
+*{margin:0;padding:0;}
+ul li{list-style:none;}
+a img{border:none;}
+a{text-decoration:none;}
+clear{clear:both;}
+/*头部样式*/
+	.bg{background:#eff3f5;}
+	.w1180{width:1180px;}
+	.bannerbox{height:350px;margin:50px auto 0;clear:both;z-index:-1;background:red;}
+/*内容样式*/
+	.tjbox{height:600px;margin:20px auto;}
+	.tjbox li.items{width:280px;height:300px;float:left;margin-right:20px;margin-bottom:20px;color:#34495e;position:relative;}
+	.tjbox li.items:nth-child(4n){margin-right:0;}
+/*	li的悬浮层*/
+	.tjbox li.items:before{
+		content:"";
+		opacity:0;
+		position:absolute;
+		z-index:1;
+		top:-16px;
+		right:-16px;
+		left:-14px;
+		bottom:0;
+		background-color:#fff;
+		box-shadow:0 0 1em #ccc;
+		transition:opacity .6s ease;
+	}
+	.tjbox li.items:hover:before{opacity:1;transition:opacity .6s ease;}
+	.tjbox li.items:hover *{color:#000;}
+	.tjbox li.items .cover{overflow:hidden;}
+	.tjbox li.items .cover .img{transition:transform 0.6s ease;}
+	.tjbox li.items:hover .img{transform:scale(1.1);transition:transform 0.6s ease;}
+	.tjbox li.items .cover{position:relative;z-index:2}
+	.tjbox li.items h3.title{
+		padding:5px 0;
+		word-break:break-all;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;/*省略号*/
+	}
+	.tjbox li.items h3{width:90%;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
+	.tjbox li.items h3 a{color:#34495e;}
+	.tjbox li.items .info span.m{background:#dfe5e9;font-size:12px;padding:2px 8px;border-radius:5px;color:#999}
+	.tjbox li.items .info span.h{padding:0 10px;}
+	.tjbox li.items p.pic{padding-top:5px;}
+	.tjbox li.items .hpiv{width:20px;height:20px;border-radius:50%;vertical-align:bottom;padding-right:5px;}
+/*尾部样式*/
+
+</style>
+</head>
+<body class="bg">
+<!--头部区域-->
+<div id="header">
+	<div class="wrap w1180">
+		<div class="logo"><img src="images/ui.cn.png" alt=""></div>
+		<ul>
+			<li style="margin-left:30px;color:#3498db;">首页</li>
+			<li>
+				<a href="#">发现<i class="iconfont icon-tubiao-"></i></a>
+				<ul>
+					<li><a href="#">作品</a></li>
+					<li><a href="#">文章</a></li>
+					<li><a href="#">活动</a></li>
+					<li><a href="#">设计大赛</a></li>
+					<li><a href="#">设计团队</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">学习<i class="iconfont icon-tubiao-"></i></a>
+			</li>
+			<li>
+				<a href="#">培训<i class="iconfont icon-tubiao-"></i></a>
+			</li>
+			<li>
+				<a href="#">招聘<i class="iconfont icon-tubiao-"></i></a>
+			</li>
+			<li>
+				<a href="#">更多<i class="iconfont icon-tubiao-"></i></a>
+			</li>
+		</ul>
+	</div>
+</div>
+	<style>
+		#header{background:#fff;height:70px;postion:relative;z-index:5;}
+		#header .wrap{margin:0 auto;height:70px;}
+		#header .wrap ul li{float:left;height:70px;line-height:70px;}
+		#header .wrap ul li a{color:#34495E;display:block;padding:0 30px;}
+		#header .wrap li ul{display:block;border:1px solid #fff;background:#fff;z-index:5;}
+		#header .wrap li:hover ul{display:block;}
+		#header .wrap li ul li{float:none;z-index:5;}
+		#header .wrap li ul li a{color:#34495E;padding:10px;text-align:center;line-height:50px;z-index:5;}
+		#header .wrap .logo{float:left;}
+	</style>
+<!--轮播图-->
+<div class="bannerbox w1180">
+	<img style="z-index:-1;" src="http://img.ui.cn/data/upload/201512/1450144922_739.png?v=1450618948" alt="">
+</div>
+<!--内容区域-->
+<div id="contant">
+<div class="tjbox w1180">	
+	<ul>
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+		
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+		<li class="items">
+			<div class="cover">
+				<a href="#"><img class="img" width="280" height="210" src="https://img.ui.cn/data/file/8/4/6/2392648.jpg" alt=""></a>
+				<h3 class="title"><a href="#">网易有道x最强大脑 | 测测你的人格词条</a></h3>
+				<p class="info">
+					<span class="m">原创</span>
+					<span class="h"><i class="iconfont icon-yanjing">233</i></span>
+					<span class="h"><i class="iconfont icon-taolun">666</i></span>
+					<span class="h"><i class="iconfont icon-yezi"></i>91</span>
+				</p>
+				<p class="pic">
+					<a href="#"><img class="hpiv" src="http://7u2k3q.com2.z0.glb.qiniucdn.com/avatar/3/4/8/4/204843.jpeg?imageMogr2/auto-orient/crop/!735x735a34a38/thumbnail/60x60/1450618948" alt=""></a>
+					<span>misaki</span>
+				</p>
+			</div>
+		</li>
+	</ul>	
+</div>
+</div>
+<div id="footer">
+</div>
+</body>
+<script>
+
+</script>
+</html>
