@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+/*爱心*/
+.love{
+	width:100px;
+	height:100px;
+	position:relative;
+	margin:100px auto;
+	animation:jump 1s linear infinite;
+}
+.love:before,.love:after{
+	position:absolute;
+	left:23px;
+	top:0;
+	content:"";
+	width:50px;
+	height:80px;
+	background:#BE1A25;
+	transform:rotate;
+	border-radius:50px 50px 0 0;
+	transform:rotate(45deg);
+}
+.love:after{
+	left:0;
+	transform:rotate(-45deg);
+}
+	@keyframes jump{
+		from{transform:scale(1);}
+		to{transform:scale(1.2);}
+	}
+</style>
+</head>
+
+<body>
+	<div class="love"></div>
+</body>
+</html>
