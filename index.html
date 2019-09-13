@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+ <head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<base target="_blank">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Document</title>
+<link rel="shortcut icon" href="favicon.ico"/>
+<style>
+/*全局样式*/
+*{margin:0;padding:0;}
+ul li{list-style:none;}
+a img{border:none;}
+a{text-decoration:none;}
+clear{clear:both;}
+/*html{overflow-y:hidden;}*/
+body{
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+/*头部样式*/
+.nav{
+	width:280px;
+	height:100%;
+	background:#fff;
+	float:left;
+}
+.nav ul li{
+	list-style:none;
+	width:280px;
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	transition:all 1s ease;
+	position:relative;
+	overflow:hidden;
+}
+.nav ul li:nth-last-child(1){
+	border-bottom:1px solid #000;
+}
+.nav ul li a{
+	font-size:16px;
+	text-align:center;
+	display:block;
+	line-height:45px;
+	position: relative;
+	 z-index:1;
+	 color:#000;
+	}
+.nav ul li:hover{
+	background:#000;
+	transition:all 1s ease;
+}
+.nav ul li span{
+	width:280px;
+	height:45px;
+	display:block;
+	background:#27a993;
+	position: absolute;
+	left:280px;top:0;
+	border-bottom:2px solid #fff;
+	}
+.nav ul li:hover span{
+	position:absolute;
+	left:0;
+	transition:all 0.6s ease;
+	}
+.loge{
+	width:280px;
+	height:280px;
+	position:relative;
+	overflow:hidden;
+	border-right:1px solid #000;
+	}
+.loge .l-pic{
+	background:#000;
+	width:140px;
+	height:140px;
+	border-radius:50%;
+	position:absolute;
+	top:50%;left:50%;
+	margin-left:-70px;
+	margin-top:-70px;
+	}
+.loge .l-pic #clickme{
+	position:absolute;
+	z-index:2;
+	border-radius:50%;width:100%;
+	height:100%;
+	cursor:pointer;
+	background:#fff;
+	text-align:center;
+	}
+.loge .l-pic #clickme img{
+	padding-top:25px;
+}
+.gy{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#000;
+	top:0;left:0;
+	z-index:1;
+	border-radius:50%;
+	animation:move 1s ease-in-out infinite;
+	}
+.move3{
+	animation:move3 2s ease-in-out;
+	}
+@keyframes move{
+	from{transform:scale(1);opacity:1;}
+	to{transform:scale(1.2);opacity:0;}
+}
+@keyframes move3{
+	from{transform:scale(1);}
+	to{transform:scale(3);opacity:0;}
+}
+/*内容样式*/
+.hidden{
+	color:#000;
+	padding:10px 0 0 10px;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	position:absolute;
+	text-align: center;
+	font-size:20px;
+	z-index:2;
+	}
+.hidden-t{
+	color:#fff;
+	}
+.content .text span{
+	padding:50px 0 0 50px;
+	display:inline-block;
+	}
+#box{
+	width:600px;
+	height:600px;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	position:absolute;
+	border-radius:50%;
+	}
+#ball,#ball2{
+	position:absolute;
+	top:0;
+	left:0;
+	width:20px;
+	height:20px;
+	background: #000;
+	border-radius:50%;
+	}
+/*尾部样式*/
+.ball{
+	width:500px;
+	height:500px;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	position:absolute;
+}
+.ball .ball-cube{
+	width:500px;
+	height:500px;
+	transform-style:preserve-3d;
+	transform:rotate(-20deg) rotateX(-20deg) rotateY(0deg);
+	animation:ball 20s linear infinite;
+}
+@keyframes ball{
+	from{transform:rotate(-20deg) rotateX(-20deg) rotateY(0deg);}
+	to{transform:rotate(-20deg) rotateX(-20deg) rotateY(360deg);}
+}
+.ball .ball-cube div{
+	width:500px;
+	height:500px;
+	border:1px solid #999;
+	border-radius:50%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.ball-cube div:nth-child(1){transform:rotateY(0deg);}
+.ball-cube div:nth-child(2){transform:rotateY(20deg);}
+.ball-cube div:nth-child(3){transform:rotateY(40deg);}
+.ball-cube div:nth-child(4){transform:rotateY(60deg);}
+.ball-cube div:nth-child(5){transform:rotateY(80deg);}
+.ball-cube div:nth-child(6){transform:rotateY(100deg);}
+.ball-cube div:nth-child(7){transform:rotateY(120deg);}
+.ball-cube div:nth-child(8){transform:rotateY(140deg);}
+.ball-cube div:nth-child(9){transform:rotateY(160deg);}
+.ball-cube div:nth-child(10){transform:rotateX(90deg) translateZ(200px) scale(0.6);}
+.ball-cube div:nth-child(11){transform:rotateX(90deg) translateZ(150px) scale(0.8);}
+.ball-cube div:nth-child(12){transform:rotateX(90deg) translateZ(100px) scale(0.92);}
+.ball-cube div:nth-child(13){transform:rotateX(90deg) translateZ(50px) scale(0.98);}
+.ball-cube div:nth-child(14){transform:rotateX(90deg) translateZ(0px);}
+.ball-cube div:nth-child(15){transform:rotateX(90deg) translateZ(-50px) scale(0.98);}
+.ball-cube div:nth-child(16){transform:rotateX(90deg) translateZ(-100px) scale(0.92);}
+.ball-cube div:nth-child(17){transform:rotateX(90deg) translateZ(-150px) scale(0.8);}
+.ball-cube div:nth-child(18){transform:rotateX(90deg) translateZ(-200px) scale(0.6);}
+</style>
+</head>
+<body>
+<!--banner-->
+<div class="nav">
+	<div class="loge">
+		<div class="l-pic">
+			<div id="clickme">
+				<img width="100" height="85" src="images/小电视.gif" alt="">
+			</div>
+			<span class="gy"></span>
+		</div>
+	</div>
+	<ul>
+		<li><a href="index.html" target="mywork">首页</a><span 
+		style="background:#ffff00;"></span></li>
+		<li><a href="百度/index.html" target="mywork">百度</a><span style="background:#ffcc00;"></span></li>
+		<li><a href="京东/index.html">京东</a><span style="background:#ff9900;"></span></li>
+		<li><a href="小米/index.html">小米</a><span style="background:#ff6600;"></span></li>
+		<li><a href="B站/index.html">B站</a><span style="background:#ff3300;"></span></li>
+		<li><a href="锤子/index.html">锤子</a><span style="background:#ff0000;"></span></li>
+		<li><a href="度盘搜/index.html">度盘搜</a><span style="background:#660000;"></span></li>
+		<li><a href="微信/index.html">微信</a><span style="background:#663300"></span></li>
+		<li><a href="ui.cn/index.html">ui.cn</a><span style="background:#666600"></span></li>
+		<li><a href="QQ浏览器/index.html">QQ浏览器</a><span style="background:#669900"></span></li>
+		<li><a href="TIM/index.html">TIM</a><span style="background:#66cc00"></span></li>
+		<li><a href="宣传案例/index.html">宣传案例</a><span style="background:#66ff00"></span></li>
+		<li><a href="#">菜单</a><span style="background:#33ff00"></span></li>
+		<li><a href="#">菜单</a><span style="background:#339900"></span></li>
+		<li><a href="#">菜单</a><span style="background:#336600"></span></li>
+	</ul>
+	</div>
+<!--content-->
+<div id="box">
+	<div id="ball"></div>	
+	<!-- <div id="ball2"></div> -->
+</div>
+<div class="hidden">
+	<span class="hidden-t">在页面中输入方向键↑↑↓↓←→←→可以开启隐藏页面</span>
+</div>
+<div class="ball">
+	<div class="ball-cube">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>	
+</div>
+<!--footer-->
+</div>
+</body>
+	<script>
+	window.onload=function(){
+	var ballDom=document.getElementById('ball');
+	var ballDom2=document.getElementById('ball2');
+	var angle=0;
+	var speed=changeAngle(3);
+	var arr=[];
+	var arr2=[];
+	function draw(){
+		angle+=speed;
+		var cleft=300+Math.cos(angle)*300;//1 0 -1 0
+		var ctop=300+Math.sin(angle)*300;//0 1 0 -1
+		var cleft2=300+Math.sin(angle)*300;//1 0 -1 0
+		var ctop2=300+Math.cos(angle)*300;//0 1 0 -1
+		ballDom.style.left=cleft+'px';
+		ballDom.style.top=ctop+'px';
+		ballDom.style.background=getRgb16();
+		
+		// ballDom2.style.left=cleft2+'px';
+		// ballDom2.style.top=ctop2+'px';
+		// ballDom2.style.background=getRgb16();
+		// weiba(arr2,ballDom2,50);
+		weiba(arr,ballDom,50);
+	}
+	function weiba(arr,dom,num){
+		var ndiv=document.createElement('div');
+		ndiv.style.borderRadius='50%';
+		ndiv.style.width='8px';
+		ndiv.style.height='8px';
+		ndiv.style.background=getRgb16();
+		ndiv.style.position='absolute';
+		ndiv.style.left=dom.offsetLeft+'px';
+		ndiv.style.top=dom.offsetTop+'px';
+		document.getElementById('box').appendChild(ndiv);
+		arr.push(ndiv);
+		if(arr.length>num){
+			var divd=arr.shift();
+			document.getElementById('box').removeChild(divd);
+		}
+	}
+	setInterval(function(){
+		draw();
+	},30);
+	function changeAngle(jiaodu){
+		return jiaodu*Math.PI/180;
+	}
+	function getRgb16(){
+		var r=tRandom(256).toString(16);
+		var g=tRandom(256).toString(16);
+		var b=tRandom(256).toString(16);
+		if(r.length<2)r=r+''+r;
+		if(g.length<2)g=g+''+g;
+		if(b.length<2)b=b+''+b;
+		return '#'+r+''+g+''+b;
+	}
+	function tRandom(start){
+		return Math.floor(Math.random()*start);
+	}
+};
+//隐藏区域
+(function(){
+	var i=0;//外部函数的变量
+	document.onkeydown=function(ev){
+		ev=ev||window.event;
+		i+=parseInt(ev.keyCode);
+		console.log(i);
+		if(i==308)
+		{
+			window.open('隐藏页面/index.html');
+		}
+	};
+})();//立即执行这个闭包
+//导航栏头部
+(function(){
+	var arr=[];
+	document.getElementById("clickme").onclick=function(){
+		if(arr.length>20)return;
+		var pdom=this.parentElement;
+		var spanDom=document.createElement("span");
+		spanDom.className="gy move3";
+		spanDom.style.background="linear-gradient("+randomColor()+","+randomColor()+")";
+		this.nextElementSibling.style.background="linear-gradient("+randomColor()+","+randomColor()+","+randomColor()+")";
+//		alert(this.nextElementSibling.tagName);
+		pdom.appendChild(spanDom);
+		arr.push(spanDom);
+		setTimeout(function(){
+			var index=arr.indexOf(spanDom);
+			pdom.removeChild(arr.splice(index,1)[0]);
+		},2000);
+	};
+	function randomColor(){
+				var r = Math.floor(Math.random()*256);
+				var g = Math.floor(Math.random()*256);
+				var b = Math.floor(Math.random()*256);
+				var a = Math.random();
+				return "rgb("+r+","+g+","+b+","+a+")";
+			};
+})();
+	</script>
+</html>
